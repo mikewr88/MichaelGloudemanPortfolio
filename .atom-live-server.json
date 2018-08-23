@@ -1,4 +1,4 @@
 {
-  "entry-file" : "./dist/index.html"
-
+  "entry-file" : "./index.html",
+  "root": "H://mikew/Documents/Code/Portfolio/dist"
 }

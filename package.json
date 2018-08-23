@@ -6,7 +6,7 @@
   "homepage": "https://mikewr88.github.io/MichaelGloudemanPortfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages-deploy"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
