@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio ",
   "main": "index.js",
+  "homepage": "https://mikewr88.github.io/MichaelGloudemanPortfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -13,6 +15,7 @@
   "author": "Michael Gloudeman",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "node-sass": "^4.9.3"
   }
 }
