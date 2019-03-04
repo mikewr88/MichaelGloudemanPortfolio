@@ -15,7 +15,9 @@
     background: #fff;
     @include easeOut;
     border-radius: 30%;
-
+    &.drk{
+      background: $secondary-color;
+    }
   }
 
 
@@ -93,7 +95,7 @@
       background-size: cover;
       border-radius: 50%;
       border: solid 3px $secondary-color;
-      
+
     }
   }
 
