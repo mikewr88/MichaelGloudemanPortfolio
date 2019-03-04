@@ -14,9 +14,6 @@
   transition: all 0.5s ease-out;
   border-radius: 30%; }
 
-.menu-button .button-line.drk {
-  background: #5191f7; }
-
 .menu-button.close {
   transform: rotate(180deg); }
 
@@ -187,8 +184,7 @@ body#bg-img .overlay {
   transform-origin: center bottom;
   transform-style: preserve-3d;
   text-align: center;
-  z-index: 99;
-  cursor: pointer; }
+  z-index: 99; }
 
 .git-cover svg {
   width: 30px;
@@ -249,8 +245,7 @@ body#bg-img .overlay {
   transform-origin: center bottom;
   transform-style: preserve-3d;
   text-align: center;
-  z-index: 99;
-  cursor: pointer; }
+  z-index: 99; }
 
 .linked-cover svg {
   width: 30px;
@@ -286,8 +281,8 @@ header {
   color: #5191f7; }
 
 main {
-  padding: 4rem 4rem 4rem 4rem;
-  min-height: calc(100vh - 180px); }
+  padding: 4rem;
+  min-height: calc(100vh - 60px); }
 
 main .icons {
   margin-top: 1rem;
@@ -314,7 +309,7 @@ main#home h1 {
 
 .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio';
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px; }
 
@@ -327,98 +322,24 @@ main#home h1 {
   height: auto; }
 
 .bio {
-  grid-area: bio;
-  font-size: 1.1em; }
-
-.bio h3 {
-  font-size: 1.5em; }
+  grid-area: bio; }
 
 .job-1 {
-  grid-area: UCLA;
-  margin-left: 20px; }
-
-.pic-1 {
-  grid-area: UCLApic;
-  background-image: url("../img/UCLA.jpg");
-  background-size: cover;
-  background-position: bottom;
-  transition: transform .5s ease-in-out;
-  transform: translate(0%); }
+  grid-area: job1; }
 
 .job-2 {
-  grid-area: APP;
-  margin-right: 20px; }
-
-.pic-2 {
-  grid-area: APPpic;
-  background-image: url("../img/App.png");
-  background-size: cover;
-  background-position: center;
-  transition: transform .5s ease-in-out;
-  transform: translate(0%); }
+  grid-area: job2; }
 
 .job-3 {
-  grid-area: HACK;
-  margin-right: 20px; }
+  grid-area: job3; }
 
-.pic-3 {
-  grid-area: HACKpic;
-  background-color: black;
-  background-image: url("../img/hack.png");
-  background-repeat: no-repeat;
-  background-size: 200px;
-  background-position: left 30px top 50%;
-  color: white;
-  font-size: 100px;
-  transition: transform .5s ease-in-out;
-  transform: translate(0%); }
-
-.pic-3:before {
-  content: 'Hackingtons';
-  position: relative;
-  top: 30%;
-  left: 30%; }
-
-.hidepic1 {
-  position: relative;
-  transform: translate(120%); }
-
-.hidepic2 {
-  position: relative;
-  transform: translate(-120%); }
-
-.Education {
-  grid-area: Education;
-  font-size: 5rem;
-  color: #444;
-  text-align: center; }
-
-.job-container {
-  display: grid;
-  grid-template-areas: 'HACK HACKpic' 'Education Education' 'UCLApic UCLA' 'APP APPpic';
-  grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 100px;
-  background: white;
-  padding: 4rem; }
-
-.job-container .job {
-  background: white;
+.job {
+  background: #515151;
   padding: 0.5rem;
-  width: 100%;
-  color: #444;
-  border-bottom: #5191f7 5px solid;
-  margin-bottom: 100px; }
+  border-bottom: #5191f7 5px solid; }
 
-.job-container .job h3 {
-  font-size: 3rem;
+.job h3 {
   color: #5191f7; }
-
-.job-container .job h4 {
-  font-size: 1.5em; }
-
-.relevant {
-  font-weight: bold;
-  font-size: 1.2em; }
 
 #main-footer {
   text-align: center;
