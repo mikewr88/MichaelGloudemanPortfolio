@@ -413,10 +413,33 @@ main {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.7rem; }
+  grid-column-gap: 2rem;
+  grid-row-gap: 4rem;
+  padding: 40px; }
+  .projects .item {
+    position: relative;
+    overflow: hidden; }
+  .projects .image-overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 100;
+    background-color: #5191f7;
+    border-radius: 5px;
+    padding: 2px 10px 2px 10px;
+    font-size: 2rem;
+    transform: translate(-50%, -400%);
+    transition: all .5s ease-in-out; }
+    .projects .image-overlay:hover {
+      transform: translate(-50%, -50%); }
+      .projects .image-overlay:hover ~ img {
+        opacity: 0.7;
+        border-color: #5191f7;
+        transition: all 0.5s ease-out; }
   .projects img {
     width: 100%;
-    border: 3px #fff solid; }
+    border: 3px #fff solid;
+    border-radius: 4px; }
     .projects img:hover {
       opacity: 0.7;
       border-color: #5191f7;
@@ -438,10 +461,11 @@ main {
       width: 50%; }
       .skills .skill-img .hoverable .hideSkill {
         font-size: 1.5rem;
-        visibility: hidden;
+        opacity: 0;
         z-index: -1;
         position: relative;
-        transform: translate(0%, -200%); }
+        transform: translate(0%, -200%);
+        transition: opacity .5s ease-in-out; }
       .skills .skill-img .hoverable .seethru {
         background: #444;
         border-radius: 40%; }
@@ -455,7 +479,7 @@ main {
         .skills .skill-img .hoverable:hover img {
           transform: rotate(90deg); }
         .skills .skill-img .hoverable:hover .hideSkill {
-          visibility: visible; }
+          opacity: 1; }
 
 #img1 {
   grid-area: img1; }

@@ -63,3 +63,26 @@ $(document).scroll(function(){
       hamburger.removeClass("drk");
   }
 });
+
+$(".projectImg").hover(function() {
+  $('.image-overlay').css({
+    'transform': 'translate(-50%, -400%)'
+  });
+  $(this).prev().css({'transform': 'translate(-50%, -50%)',
+                      'opacity': '1'
+});
+
+}, function () {
+  $(this).prev().css({
+    'transform': 'translate(-50%, -400%)',
+    'opacity': '0'
+  });
+});
+
+$(".image-overlay").mouseover(function() {
+  $(this).css({'transform': 'translate(-50%, -50%)',
+              'opacity': '1'
+
+});
+
+});
